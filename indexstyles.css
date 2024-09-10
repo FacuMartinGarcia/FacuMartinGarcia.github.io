@@ -21,7 +21,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: relative;
     background-color: black;
     top: 0;
     width: 100%;
@@ -79,7 +78,7 @@ a:hover{
 h1{
     color: aliceblue;
     text-align: center;
-    font-weight: 600px ;
+    font-weight: 600;
     font-size: x-large;
 }
 
@@ -90,7 +89,7 @@ nav img {
 
 }
 .presentacion{
-    background-color:black /
+    background-color:black; 
     color: aliceblue;
 }
 
@@ -134,23 +133,28 @@ img{
     display: flex;
     align-items: center; /* Alinea verticalmente los elementos en el centro */
     gap: 20px; /* Espacio entre el texto y la imagen */
-    background-color: #b32727;
-    color: #69348b;
+    background:linear-gradient(to left, rgb(12, 175, 91) 50%, rgb(212, 125, 18) 50%) no-repeat right / 200%;
+    transition: background-position 0.3s ease;
+    min-height: 300px; 
+}
+
+.container:hover{
+    background-position: left;
+    cursor:pointer;
 }
 
 .text {
-    flex: 1; /* Permite que el bloque de texto ocupe el espacio disponible */
+    flex: 1; 
 }
 
 .acercade{
     text-align: center;
     padding: 20px;
-
 }
 
 .image img {
-    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
-    height: auto; /* Mantiene las proporciones de la imagen */
+    max-width: 100%; 
+    height: auto; 
 }
 
 /* PARA EL FORMUALRIO DE CONTACTO*/
@@ -164,7 +168,8 @@ div.contacto {
     max-width: 400px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    float: right;
+    /*float: right;*/
+    margin:0 auto;
     
 }
 
