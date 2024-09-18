@@ -1,6 +1,6 @@
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-size: 10px;
     box-sizing: border-box;
 }
 
@@ -15,22 +15,6 @@ main {
     padding-top: 50px;
 }
 
-
-nav {
-    display: flex;
-    font-size: 28px; /* font nav*/
-    justify-content: space-between;
-    align-items: center;
-    padding: 3px 20px;
-    background-color: #010616; /*fondo del nav bar*/
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    position: fixed;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
-
 .redes {
     display: flex; 
     flex-direction: row; /* Alinea los íconos de redes sociales en fila */
@@ -42,9 +26,25 @@ nav {
     margin-left: 4px; /* Espacio entre íconos */
 
 }
+nav {
+    display: flex;
+    font-size: 28px; /* font nav*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20px;
+    background-color: white; /*fondo del nav bar*/
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+nav img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px; /* Espacio entre íconos */
 
-ul li.right {
-    margin-left: auto; /* Empuja el bloque de redes sociales hacia la derecha */
 }
 
 ul {
@@ -54,35 +54,70 @@ ul {
     display: flex;
     
 }
-
 ul li {
     margin-right: 20px;
     
 }
+ul li.right {
+    margin-left: auto; /* Empuja el bloque de redes sociales hacia la derecha */
+}
+
 a {
     display: block;
     padding: 8px;
-     /* color del rectangulo */
-    color: white; /* color de la fuente */
-    font-size: 40px; /* font nav*/
+    color: #46a2db;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px; 
     text-decoration: none;
 }
 
 a:hover{
     color: white;
-    background-color:#7695FF;
+    background-color:#46a2db;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 1em;
+    
+    /*border-radius: 1em;*/
 }
 
 
-nav img {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px; /* Espacio entre íconos */
 
+/* Estilo para el logo de la empresa*/
+.logoempresa {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* ALTO DE LA PANTALLA */
+    overflow: hidden;
 }
+
+.logoempresa-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*CUBRIR TODO EL CONTENEDOR*/
+}
+
+.logoempresaText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*centrado  horizontal y vertical*/
+    text-align: center;
+    color: white; 
+}
+
+.logoempresaText-titulo {
+    font-family: Roboto;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.logoempresaText-subtitulo {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
 
 /* Estilo básico del carousel */
 .carousel {
@@ -217,18 +252,9 @@ img{
     cursor: pointer;
 }
 
-.text {
-    flex: 1;
-    text-align: center; /* Alineación del texto */
-    padding: 20px;
-    background-image: url('images/productora.jpeg'); 
-    background-size: cover; /* Escalar la imagen para que cubra todo el contenedor */
-    background-position: center; /* Centrar la imagen */
-    background-repeat: no-repeat; /* Evitar que la imagen se repita */
-    color: white; /* Cambiar el color del texto para mejor visibilidad */
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para el texto */
-    border-radius: 10px; / borde redondeado;
-}
+
+
+
 
 h1.acercade{
     color:mediumblue;
