@@ -226,12 +226,27 @@ section {
     .carousel-item img {
         width: 100%;
         height: auto;
-        object-fit: cover; /* Mantiene las imágenes centradas y cubre el área del contenedor */
+        object-fit: cover; 
     }
+
     .carousel-item img {
     width: 100%;
     display: block;
     }
+
+
+    /* Estilo del Slide FOTOS*/
+
+    .contenedor-slider {
+        display: flex;
+        align-items: center;
+    }
+    .icono-derecha, .icono-izquierda{
+        width:45%;
+        cursor: pointer;
+        border: none;
+    }
+
 
     /* Estilo de los botones de control (anterior/siguiente) */
     .prev, .next {
