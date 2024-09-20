@@ -36,18 +36,64 @@
         <h1 id="videos" class="nosotros" style="color: #3986b6;">FOTOGRAFIA PROFESIONAL</h1>
         <h2 style="color: black;">Estamos equipados para darle la mejor calidad a tus videos, con la mejor tecnología, y un grupo de trabajo técnico especializado </h2>
         <div class="contenedor-slider">
-            <div class="izquierda">
-                <img src="fechaizquierda.jpg" alt="">
+            <div class="icono-izquierda">
+                <img src="/images/Flechas/4izquierda.png" alt="">
             </div>
-            <div class="ImagenSlide">
-                <img name="imagen" src="imagenes/slide/01.jpg">       
+            <div class="Imagenes">
+                <img name="imagenSlide" src="images/slide/01.jpg">       
             </div>    
-            <div class="derecha">
-                <img src="fechaderecha.jpg" alt="">
+            <div class="icono-derecha">
+                <img src="/images/flechas/4derecha.png" alt="">
             </div>
 
         </div>    
     </div>
+    <script>
+        
+        var imagenes=["images/Promo/p1.jpg",
+            "images/Promo/p2.jpg",
+            "images/Promo/p3.jpg",
+            "images/Promo/p4.jpg",
+            "images/Promo/p5.jpg",
+            "images/Promo/p6.jpg",
+            "images/Promo/p7.jpg",
+            "images/Promo/p8.jpg",
+        ];
+
+        document.imagenSlide.src = imagenes[0];
+        var slider = document.querySelector(".slider");
+
+
+        var contador=0;
+        function MoverDerecha()
+            {
+            contador++;
+
+            if (contador>imagenes.length-1)
+                {
+                    contador=0;
+                }
+                document.imagenSlide.src = imagenes[contador];
+            }
+
+        function MoverIzquierda()
+            {
+            contador--;
+            //slider.style.marginLeft='-$(contador * 100)%';
+            if (contador<0)
+                {
+                    contador= imagenes.length-1;
+                }
+                document.imagenSlide.src = imagenes[contador];
+            }
+
+        var botonDerecha = document.querySelector(".icono-derecha");
+        var botonIzquierda= document.querySelector(".icono-izquierda");
+        
+        botonDerecha.addEventListener ("click",MoverDerecha);
+        botonIzquierda.addEventListener ("click",MoverIzquierda);
+
+    </script>
 
 </body>
 </html>

@@ -194,11 +194,11 @@ section {
 }
 
 #logo {
-    display: block; /* Asegura que la imagen sea tratada como un bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    max-width: 100%; /* Hace que la imagen se ajuste al ancho de su contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    width: 150px; /* Ajusta el tamaño del logo, cámbialo según necesites */
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto; 
+    width: 150px; 
 }
 
 
