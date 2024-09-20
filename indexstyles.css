@@ -11,7 +11,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: black
+    background-color: white;
 }
 
 main {
@@ -158,6 +158,47 @@ ul li a:hover {
 .logoempresaText-subtitulo {
     font-size: 2rem;
     margin-top: 10px;
+}
+
+/* ---------------------- Acerca de Nosotros ------------------- */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#nosotros {
+    text-align: center;
+
+}
+
+#servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.servicios-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#datos {
+    text-align: center;
+    padding: 20px;
+}
+
+#logo {
+    display: block; /* Asegura que la imagen sea tratada como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Hace que la imagen se ajuste al ancho de su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    width: 150px; /* Ajusta el tamaño del logo, cámbialo según necesites */
 }
 
 
@@ -376,5 +417,9 @@ input[type="submit"]:hover {
     color: rgb(255, 255, 255);
 }
 
+footer{
+    background-color: #000000;
+    color: #3986b6;
+}
 
 
