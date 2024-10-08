@@ -338,6 +338,34 @@ img{
     display: block;
 }
 
+/*      Nuevo       */
+.seccionPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .principal iframe {
+    width: 2000%;  /* Ajusta el tamaño según lo grande que quieras el video */
+    height: 500px; /* Controla la altura para que sea mayor */
+  }
+  
+  .seccionSecundaria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 videos por fila */
+    grid-gap: 15px;
+    width: 90%; /* Para centrar los videos dentro de su contenedor */
+  }
+  
+  .videochico iframe {
+    width: 100%;
+    height: 200px; /* Ajusta la altura de los videos pequeños */
+  }
+  
+  
+
+
+
 /* --------------------ACERCA DE-------------------- */
 
 
